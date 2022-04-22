@@ -1,4 +1,4 @@
-<footer class="footer">=
+<footer class="footer">
     <div class="footer__copyright">
         <p>Copyright © <?= date("Y") . " " . get_bloginfo("title") ?>. All rights reserved</p>
         <p>Website by: <a href="https://emmbrand.com">emmbrand</a></p>
