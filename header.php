@@ -28,8 +28,8 @@ $args = $args ?? array()
             array(
                 'theme_location' => 'primary',
                 'container' => 'ul',
-                'menu_class' => 'menu header__menu',
-                'menu_id' => 'header-menu',
+                'menu_class' => 'menu site-header__menu',
+                'menu_id' => 'site-header-menu',
                 'depth' => '3'
             )
         );
