@@ -5,13 +5,13 @@ module.exports = (env, options) => {
         entry: {
             bundleCSS: './src/scss/index.scss',
             bundle: './src/ts/index.ts',
-            contact: './src/ts/contact.ts',
+            // contact: './src/ts/contact.ts',
         },
         module: {
             rules: [{
                 test: /\.ts$/,
                 use: 'ts-loader',
-                include: [path.resolve(__dirname, 'src/js/src')]
+                include: [path.resolve(__dirname, 'src/ts')]
             },
                 {
                     test: /\.scss$/,

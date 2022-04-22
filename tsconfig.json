@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "es6",
+      "dom",
+      "ESNext"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "outDir": "./assets/js",
+    "strict": true,
+    "target": "ES6"
+  },
+  "include": [
+    "src/ts/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
