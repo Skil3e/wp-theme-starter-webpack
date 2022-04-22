@@ -22,7 +22,7 @@ $args = $args ?? array()
     <button id="mobile-menu__open" class="mobile-menu__open">
         <?= GetIconMarkup("/assets/icons/menu") ?>
     </button>
-    <nav>
+    <nav class="site-header__nav">
         <?php
         wp_nav_menu(
             array(

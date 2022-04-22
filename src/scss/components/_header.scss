@@ -28,6 +28,12 @@
   }
 }
 
+.site-header__nav {
+  @include mx.desktop() {
+	margin-block-start : auto;
+  }
+}
+
 .site-header__menu {
   display     : flex;
   align-items : center;
