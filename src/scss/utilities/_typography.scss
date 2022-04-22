@@ -1,27 +1,7 @@
 .page-title {
   position         : relative;
-  text-align       : center;
-  max-width        : fit-content;
-  margin-inline    : auto;
-  padding-block    : var(--size-xl) var(--size-md);
   color            : var(--c-accent);
   margin-block-end : var(--size-xxl);
-  font-family      : var(--font-type-display);
-  font-size        : var(--font-size-2);
-  text-transform   : uppercase;
-  isolation        : isolate;
-
-  &::before {
-	content      : "";
-	position     : absolute;
-	top          : 0;
-	left         : 50%;
-	transform    : translateX(-50%);
-	width        : 20%;
-	height       : 100%;
-	border-block : 5px solid currentColor;
-	z-index      : -1;
-  }
 }
 
 .text--center {
