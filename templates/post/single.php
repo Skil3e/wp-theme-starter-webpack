@@ -1,7 +1,3 @@
-<?php
-$video = get_field('video');
-$gallery = get_field('gallery');
-?>
 <article class="post flow">
     <?php
     the_title('<h1 class="post__title">', '</h1>'); ?>
