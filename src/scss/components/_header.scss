@@ -1,20 +1,19 @@
 @use "../mixins" as mx;
 
 .site-header {
-  --logo-height    : 40px;
-  display          : flex;
-  align-items      : center;
-  position         : fixed;
-  top              : 0;
-  z-index          : 9;
-  width            : 100%;
-  height           : var(--size-header);
-  padding-inline   : var(--size-xl);
-  transition       : background-color var(--transition-time), height var(--transition-time);
-
-  background-color : var(--c-grey-1);
+  --logo-height  : 40px;
+  display        : flex;
+  align-items    : center;
+  position       : fixed;
+  top            : 0;
+  z-index        : 9;
+  width          : 100%;
+  height         : var(--size-header);
+  padding-inline : var(--size-xl);
+  transition     : background-color var(--transition-time), height var(--transition-time);
 
   &.scrolled {
+	background-color : var(--c-grey-1);
   }
 
 }
@@ -23,22 +22,22 @@
   display : flex;
 
   svg {
-    fill       : currentColor;
-    height     : var(--logo-height);
-    transition : height var(--transition-time);
+	fill       : currentColor;
+	height     : var(--logo-height);
+	transition : height var(--transition-time);
   }
 }
 
 .site-header__mobile-menu {
   margin-inline-start : auto;
   @include mx.desktop() {
-    display : none;
+	display : none;
   }
 }
 
 .site-header__nav {
   @include mx.desktop() {
-    margin-inline-start : auto;
+	margin-inline-start : auto;
   }
 }
 
