@@ -1,0 +1,14 @@
+@use "../mixins" as mx;
+
+.footer__copyright {
+  padding          : var(--size-lg);
+  display          : flex;
+  align-items      : center;
+  flex-direction   : column;
+  gap              : var(--size-lg);
+  background-color : var(--c-grey-10);
+  @include mx.desktop() {
+	justify-content : space-between;
+	flex-direction  : row;
+  }
+}

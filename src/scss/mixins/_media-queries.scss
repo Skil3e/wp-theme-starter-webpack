@@ -1,0 +1,27 @@
+$phone      : 85em;
+$tablet     : 52em;
+$extraSmall : 35em;
+
+@mixin extraSmall {
+  @media (max-width : $extraSmall) {
+	@content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width : $phone) {
+	@content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width : $phone) {
+	@content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width : $tablet) {
+	@content;
+  }
+}

@@ -1,0 +1,53 @@
+@forward "typography";
+@use "../mixins" as mx;
+
+:is(.visually-hidden, .sr-only) {
+  display     : inline-block;
+  inline-size : 0;
+  block-size  : 0;
+  overflow    : hidden;
+}
+
+.flow > :where(:not(:first-child)) {
+  margin-block-start : var(--flow-space, var(--size-lg));
+}
+
+.container {
+  width          : min(100%, var(--size-container));
+  padding-inline : var(--container-padding-x, var(--size-lg));
+  margin-inline  : auto;
+}
+
+.page-gutter {
+  --page-gutter: var(--size-section, var(--size-xxl));
+  margin-block : var(--page-gutter);
+}
+
+.elevate--hover {
+  position  : relative;
+  isolation : isolate;
+
+  &::after {
+	z-index       : -1;
+	content       : "";
+	position      : absolute;
+	top           : 0;
+	left          : 0;
+	right         : 0;
+	bottom        : 0;
+	width         : 100%;
+	height        : 100%;
+	box-shadow    : var(--elevation, 0 4px 16px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.06));
+	transition    : opacity 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	opacity       : 0;
+	border-radius : inherit;
+  }
+
+  &:hover::after {
+	opacity : 1;
+  }
+
+  &-2::after {
+	box-shadow : rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px;
+  }
+}

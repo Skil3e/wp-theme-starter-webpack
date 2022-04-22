@@ -1,0 +1,29 @@
+@use "../mixins" as mx;
+
+.site-header {
+  --logo-height  : 40px;
+  display        : flex;
+  align-items    : center;
+  position       : fixed;
+  top            : 0;
+  z-index        : 9;
+  width          : 100%;
+  height         : var(--size-header);
+  padding-inline : var(--size-xl);
+  transition     : background-color var(--transition-time), height var(--transition-time);
+
+  &.scrolled {
+	background-color : var(--c-grey-9);
+  }
+
+}
+
+.site-header__brand {
+  display : flex;
+  color   : var(--c-grey-0);
+
+  svg {
+	height     : var(--logo-height);
+	transition : height var(--transition-time);
+  }
+}
