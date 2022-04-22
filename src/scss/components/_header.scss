@@ -28,9 +28,16 @@
   }
 }
 
+.site-header__mobile-menu {
+  margin-inline-start : auto;
+  @include mx.desktop() {
+	display : none;
+  }
+}
+
 .site-header__nav {
   @include mx.desktop() {
-	margin-block-start : auto;
+	margin-inline-start : auto;
   }
 }
 

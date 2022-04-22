@@ -19,7 +19,7 @@ $args = $args ?? array()
         <?= GetIconMarkup("/assets/logo") ?? bloginfo('title') ?>
         <span class="sr-only"><?php bloginfo('title') ?></span>
     </a>
-    <button id="mobile-menu__open" class="mobile-menu__open">
+    <button id="site-header__mobile-menu" class="mobile-menu__open">
         <?= GetIconMarkup("/assets/icons/menu") ?>
     </button>
     <nav class="site-header__nav">
